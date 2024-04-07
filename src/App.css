@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: blue;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 10px auto;
+}
+
+div.input-container {
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    
+
+}
+
+input {
+    width: 350px;
+    background-color: whitesmoke;
+    border-width: 2px;
+}
+
+button {
+    color: brown;
+    cursor: crosshair;
+}
+
+div.filter {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    
+        
+}
+
+
+li {
+    box-sizing: content-box;
+    display: inline-block;
+    width: 250px;
+    border: solid blue 3px;
+    padding: 5px;
+    list-style-type: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 5px 10px #88888888;
+    overflow-wrap: break-word;
+}
+button.edit {
+    color: green;
+    margin-top: 10px;
+    margin-right: 20px;
+}
