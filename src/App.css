@@ -1,69 +1,167 @@
+/* App.css */
+
 body {
-    font-family: Arial, sans-serif;
-}
-
-h1 {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f0f4f8, #d9e6f6);
+    color: #333;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+  }
+  
+  h1 {
     text-align: center;
-    color: blue;
-}
-
-.container {
-    max-width: 1000px;
-    margin: 10px auto;
-}
-
-div.input-container {
-    margin-top: 20px;
-    padding: 10px;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .input-container {
     display: flex;
-    justify-content: space-evenly;
-    
-
-}
-
-input {
-    width: 350px;
-    background-color: whitesmoke;
-    border-width: 2px;
-}
-
-button {
-    color: brown;
-    cursor: crosshair;
-}
-
-div.filter {
-    margin-top: 20px;
-    margin-left: 20px;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .input-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s;
+  }
+  
+  .input-container input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  }
+  
+  .input-container button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .input-container button:hover {
+    background: #0056b3;
+  }
+  
+  .filter {
     display: flex;
     justify-content: flex-end;
-}
-
-ul{
-    margin-top: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .filter select {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
     display: flex;
-    flex-wrap: wrap;
-    column-gap: 20px;
-    
-        
-}
-
-
-li {
-    box-sizing: content-box;
-    display: inline-block;
-    width: 250px;
-    border: solid blue 3px;
-    padding: 5px;
-    list-style-type: none;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 15px;
-    box-shadow: 5px 10px #88888888;
-    overflow-wrap: break-word;
-}
-button.edit {
-    color: green;
-    margin-top: 10px;
-    margin-right: 20px;
-}
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s;
+  }
+  
+  li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  li.complete {
+    background: #d4edda;
+    border-color: #c3e6cb;
+  }
+  
+  li .status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  button {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+  }
+  
+  button.edit {
+    background: #ffc107;
+    color: #fff;
+  }
+  
+  button.edit:hover {
+    background: #e0a800;
+  }
+  
+  button.delete {
+    background: #dc3545;
+    color: #fff;
+  }
+  
+  button.delete:hover {
+    background: #bd2130;
+  }
+  
+  select {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  div.status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .input-container {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .filter {
+      justify-content: center;
+    }
+  
+    li {
+      flex-direction: column;
+    }
+  }
+  
